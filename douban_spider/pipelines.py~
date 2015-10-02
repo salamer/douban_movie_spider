@@ -32,7 +32,7 @@ class DoubanSpiderPipeline(object):
 #                    movie_name={"movie_name":str(item['movie_name'][2*i])}
 #                except IndexError:
  #                   movie_name={"movie_name":"no movie"}
-                movie_name={"movie_name":item['movie_name'][i]}
+            movie_name={"movie_name":item['movie_name'][i]}
         	star={"start":item['star'][i]}
         	quote={"quote":item['quote'][i]}
         	line=line+json.dumps(movie_name,ensure_ascii=False)
